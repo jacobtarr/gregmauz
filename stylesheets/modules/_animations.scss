@@ -1,0 +1,113 @@
+/* Custom Animations
+=============================== */
+
+
+/* Animate radial skill pies
+=============================== */
+
+/* Animate to 10% of full skill pie */
+@include keyframes (fill10Percent) {
+	from   	{ @include transform(rotate(0deg)); }
+	to 		{ @include transform(rotate(36deg)); }
+}
+/* Animate to 20% of full skill pie */
+@include keyframes (fill20Percent) {
+	from   	{ @include transform(rotate(0deg)); }
+	to 		{ @include transform(rotate(72deg)); }
+}
+
+/* Animate to 30% of full skill pie */
+@include keyframes (fill30Percent) {
+	from   	{ @include transform(rotate(0deg)); }
+	to 		{ @include transform(rotate(108deg)); }
+}
+
+/* Animate to 40% of full skill pie */
+@include keyframes (fill40Percent) {
+	from   	{ @include transform(rotate(0deg)); }
+	to 		{ @include transform(rotate(144deg)); }
+}
+
+/* Animate to 50% of full skill pie */
+@include keyframes (fill50Percent) {
+	from   	{ @include transform(rotate(0deg)); }
+	to 		{ @include transform(rotate(180deg)); }
+}
+
+/* Animate to 60% of full skill pie */
+@include keyframes (fill60Percent) {
+	from   	{ @include transform(rotate(0deg)); }
+	to 		{ @include transform(rotate(216deg)); }
+}
+
+/* Animate to 70% of full skill pie */
+@include keyframes (fill70Percent) {
+	from   	{ @include transform(rotate(0deg)); }
+	to 		{ @include transform(rotate(252deg)); }
+}
+
+/* Animate to 80% of full skill pie */
+@include keyframes (fill80Percent) {
+	from   	{ @include transform(rotate(0deg)); }
+	to 		{ @include transform(rotate(288deg)); }
+}
+
+/* Animate to 90% of full skill pie */
+@include keyframes (fill90Percent) {
+	from   	{ @include transform(rotate(0deg)); }
+	to 		{ @include transform(rotate(324deg)); }
+}
+
+/* Animate to 100% of full skill pie */
+@include keyframes (fill100Percent) {
+	from   	{ @include transform(rotate(0deg)); }
+	to 		{ @include transform(rotate(360deg)); }
+}
+
+/* Create animation class for specific animation state for skill pie */
+.fill10PercentAnimation { @include animation(fill10Percent 3s linear); }
+.fill20PercentAnimation { @include animation(fill20Percent 3s linear); }
+.fill30PercentAnimation { @include animation(fill30Percent 3s linear); }
+.fill40PercentAnimation { @include animation(fill40Percent 3s linear); }
+.fill50PercentAnimation { @include animation(fill50Percent 3s linear); }
+.fill60PercentAnimation { @include animation(fill60Percent 3s linear); }
+.fill70PercentAnimation { @include animation(fill70Percent 3s linear); }
+.fill80PercentAnimation { @include animation(fill80Percent 3s linear); }
+.fill90PercentAnimation { @include animation(fill90Percent 3s infinite); }
+.fill100PercentAnimation { @include animation(fill100Percent 3s linear); }
+
+/* Create fill/fallback state for when animation is finished */
+.fill10Percent { @include transform(rotate(36deg)); }
+.fill20Percent { @include transform(rotate(72deg)); }
+.fill30Percent { @include transform(rotate(108deg)); }
+.fill40Percent { @include transform(rotate(144deg)); }
+.fill50Percent { @include transform(rotate(180deg)); }
+.fill60Percent { @include transform(rotate(216deg)); }
+.fill70Percent { @include transform(rotate(252deg)); }
+.fill80Percent { @include transform(rotate(288deg)); }
+.fill90Percent { @include transform(rotate(324deg)); }
+.fill100Percent { @include transform(rotate(360deg)); }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

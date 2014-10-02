@@ -1,0 +1,26 @@
+/* Resume
+=============================== */
+
+.resume-container {
+	background-color: $resume-main-red;
+	padding: $section-container-padding;
+	@include selection(#fff, $resume-darkest-red);
+}
+
+.resume-content {
+	max-width: 960px;
+	margin: 0 auto;
+	padding: 0 15px;
+	text-align: center;
+	h1 {
+		color: $resume-darkest-red;
+		margin: 0;
+		font-size: 48px;
+		text-transform: uppercase;
+	}
+	p {
+		color: #fff;
+		margin-top: 30px;
+		font-size: 24px;
+	}
+}

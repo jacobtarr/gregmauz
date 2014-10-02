@@ -1,0 +1,146 @@
+/* Callout
+=============================== */
+
+.callout-container {
+	margin: 20px auto 0 auto;
+	color: #fff;
+	padding: 40px 0;
+	background-color: $primary-color;
+}
+
+.callout-content {
+	max-width: 960px;
+	margin: 0 auto;
+	padding: 0 15px 0 15px;
+}
+
+.callout-chat-bubble {
+	max-width: 910px;
+	width: 100%;
+	z-index: 1;
+	margin: 0 auto;
+	height: 192px;
+	background: $callout-main-green;
+	border-radius: 30px;
+	border: 10px solid $callout-darker-green;
+	position: relative;
+	@media (max-width: 854px) {
+		height: 162px;
+	}
+	@media (max-width: 670px) {
+		height: 132px;
+	}
+	@media (max-width: 547px) {
+		height: 162px;
+	}
+	@media (max-width: 388px) {
+		height: 132px;
+	}
+	@media (max-width: 322px) {
+		height: 127px;
+	}
+	::after {
+		content: '';
+		z-index: 2;
+		position: absolute;
+		left: 50%;
+		top: 172px;
+		margin-left: -38px;
+		width: 0;
+		height: 0;
+		border-left: 38px solid transparent;
+		border-right: 38px solid transparent;
+		border-top: 52px solid $callout-main-green;
+		@media (max-width: 854px) {
+			top: 142px;
+		}
+		@media (max-width: 670px) {
+			top: 112px;
+		}
+		@media (max-width: 547px) {
+			top: 142px;
+		}
+		@media (max-width: 388px) {
+			top: 112px;
+		}
+		@media (max-width: 322px) {
+			top: 107px;
+			margin-left: -28px;
+			border-left: 28px solid transparent;
+			border-right: 28px solid transparent;
+			border-top: 42px solid $callout-main-green;
+		}
+	}
+	::before {
+		content: '';
+		z-index: -2;
+		position: absolute;
+		left: 50%;
+		top: 172px;
+		margin-left: -52px;
+		width: 0;
+		height: 0;
+		border-left: 52px solid transparent;
+		border-right: 52px solid transparent;
+		border-top: 70px solid $callout-darker-green;
+		@media (max-width: 854px) {
+			top: 142px;
+		}
+		@media (max-width: 670px) {
+			top: 112px;
+		}
+		@media (max-width: 547px) {
+			top: 142px;
+		}
+		@media (max-width: 388px) {
+			top: 112px;
+		}
+		@media (max-width: 322px) {
+			top: 107px;
+			margin-left: -40px;
+			border-left: 40px solid transparent;
+			border-right: 40px solid transparent;
+			border-top: 58px solid $callout-darker-green;
+		}
+	}
+	p {
+		color: #fff;
+		text-align: center;
+		font-size: 48px;
+		margin: 0;
+		padding: 15px 20px;
+		@media (max-width: 854px) {
+			font-size: 36px;
+		}
+		@media (max-width: 670px) {
+			font-size: 28px;
+		}
+		@media (max-width: 409px) {
+			font-size: 26px;
+		}
+		@media (max-width: 388px) {
+			font-size: 22px;
+		}
+		@media (max-width: 344px) {
+			font-size: 20px;
+		}
+		@media (max-width: 322px) {
+			font-size: 18px;
+		}
+	}
+}
+
+.callout-microphone {
+	text-align: center;
+	margin-top: 85px;
+	img {
+		max-width: 104px;
+		width: 100%;
+		@media (max-width: 409px) {
+			max-width: 70px;
+			width: 100%;
+		}
+	}
+}
+
+

@@ -1,0 +1,104 @@
+/* Header
+=============================== */
+
+header {
+	max-width: 990px;
+	margin: 20px auto 0;
+	padding: 0 15px 0 15px;
+	@include display(flex);
+	@media (max-width: 768px) {
+		display: block;
+	}
+}
+
+.logo-container {
+	@include flex(1);
+	@media (max-width: 768px) {
+		text-align: center;
+	}
+}
+
+.header-menu {
+	@media (max-width: 768px) {
+		text-align: center;
+		margin-top: 10px;
+	}
+	ul {
+		margin: 0;
+		padding: 0;
+	}
+	li {
+		line-height: 70px;
+		font-size: 24px;
+		display: inline-block;
+		list-style-type: none;
+		margin-right: 70px;
+		@media (max-width: 768px) {
+			margin-right: 0;
+			line-height: 1;
+			font-size: 20px;
+		}
+		&:last-child {
+			margin-right: 0;
+		}
+		a {
+			@include transition(transform 0.2s);
+			position: relative;
+			@media (max-width: 768px) {
+				@include transition(inherit);
+				display: block;
+				position: static;
+				width: 100%;
+				padding: 8px 0;
+				border-top: 1px solid #eee;
+				&.last {
+					border-bottom: 1px solid #eee;
+				}
+			}
+			&:hover {
+				color: #fff;
+				&::before {
+					opacity: 1;
+					@include transform(scale(1.2));
+					@media (max-width: 768px) {
+						display: none;
+					}
+				}
+				@media (max-width: 768px) {
+					color: #fff;
+					background: $callout-main-green;
+					@include transition(0.3s ease-in);
+					border-top: 1px solid $callout-main-green;
+					&.last {
+						border-bottom: 1px solid $callout-main-green;
+					}
+				}
+			}
+			&::before {
+				position: absolute;
+				top: -2px;
+				left: -7px;
+				box-sizing: content-box;
+				padding: 0 5px;
+				@include size(100% 100%);
+				background: $callout-main-green;
+				border: 3px solid $callout-darker-green;
+				border-radius: 7px;
+				content: '';
+				opacity: 0;
+				z-index: -3;
+				@include transition(opacity 0.2s, transform 0.2s);
+				transition: opacity 0.2s, transform 0.2s;
+				@include transform(scale(0.8333));
+				@media (max-width: 768px) {
+					display: none;
+				}
+			}
+		}
+		@media (max-width: 768px) {
+			display: block;
+		}
+	}
+}
+
+

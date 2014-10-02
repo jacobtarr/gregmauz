@@ -1,0 +1,82 @@
+/* Footer
+=============================== */
+
+.footer-container {
+	background: $primary-color;
+}
+
+.footer-content {
+	max-width: 990px;
+	padding: 30px 15px;
+	margin: 0 auto;
+	color: $footer-lighter-primary-color;
+	@include display(flex);
+	@media (max-width: 768px) {
+		display: block;
+	}
+}
+
+.logo-container {
+	@include flex(1);
+	@media (max-width: 768px) {
+		text-align: center;
+	}
+}
+
+.footer-menu {
+	@media (max-width: 768px) {
+		text-align: center;
+		margin-top: 10px;
+	}
+	ul {
+		margin: 0;
+		padding: 0;
+	}
+	li {
+		line-height: 70px;
+		font-size: 24px;
+		display: inline-block;
+		list-style-type: none;
+		margin-right: 70px;
+		@media (max-width: 768px) {
+			margin-right: 0;
+			line-height: 1;
+			font-size: 20px;
+		}
+		&:last-child {
+			margin-right: 0;
+		}
+		a {
+			color: $footer-lighter-primary-color;
+			&:hover {
+				color: #fff;
+				@include transition(0.2s);
+				@media (max-width: 768px) {
+					color: #fff;
+					background: $footer-lighter-primary-color;
+					@include transition(0.3s ease-in);
+					border-top: 1px solid $footer-lighter-primary-color;
+					&.last {
+						border-bottom: 1px solid $footer-lighter-primary-color;
+					}
+				}
+			}
+			@media (max-width: 768px) {
+				@include transition(inherit);
+				display: block;
+				position: static;
+				width: 100%;
+				padding: 8px 0;
+				border-top: 1px solid $footer-lighter-primary-color;
+				&.last {
+					border-bottom: 1px solid $footer-lighter-primary-color;
+				}
+			}
+		}
+		@media (max-width: 768px) {
+			display: block;
+		}
+	}
+}
+
+

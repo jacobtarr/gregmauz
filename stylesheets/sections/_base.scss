@@ -1,0 +1,62 @@
+/* Layout
+=============================== */
+
+* {
+	@include box-sizing(border-box);
+}
+
+::-moz-selection, ::selection {
+	// empty for now
+}
+
+html {
+	font-family: sans-serif;
+}
+
+body {
+	font-family: "Futura PT", sans-serif;
+	color: #555;
+	font-size: 18px;
+	line-height: 1.4;
+	
+}
+
+main {
+	width: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: 700;
+	font-family: "Effra", serif;
+	margin: 20px 0;
+}
+
+h1 { font-size: 40px; }
+h2 { font-size: 36px; }
+h3 { font-size: 32px; }
+h4 { font-size: 28px; }
+h5 { font-size: 24px; }
+h6 { font-size: 20px; }
+p { font-size: 16px; }
+
+a {
+	color: $primary-color;
+	text-decoration: none;
+	outline: none;
+	&:hover {
+		@include transition-duration(.3s);
+	}
+	&:hover, &:focus {
+		text-decoration: none;
+	}
+}
+
+button, input, textarea {
+	outline: none;
+}
+
+.img-circle {
+	border-radius: 50%;
+}
+
+

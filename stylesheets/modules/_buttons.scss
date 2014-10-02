@@ -1,0 +1,20 @@
+/* Buttons
+=============================== */
+
+.btn {
+	border-radius: 5px;
+	padding: 12px 16px;
+	color: #fff;
+	border: 0;
+	white-space: nowrap;
+	vertical-align: middle;
+}
+
+.btn-contact {
+	background: $contact-darkest-green;
+	color: $contact-main-green;
+	&:hover {
+		background: $contact-darker-green;
+		@include transition(0.2s ease-in);
+	}
+}
